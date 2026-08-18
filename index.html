@@ -226,6 +226,28 @@
     width:100%;
   }
   .voice-note.show{display:block;}
+  #genderNote{color:var(--muted);}
+  .gender-toggle{
+    display:inline-flex;
+    background:var(--sky);
+    border-radius:999px;
+    padding:3px;
+    gap:2px;
+  }
+  .gender-toggle .gbtn{
+    border:none;
+    background:transparent;
+    color:var(--navy);
+    padding:5px 10px;
+    border-radius:999px;
+    font-size:0.78rem;
+    font-weight:600;
+    cursor:pointer;
+  }
+  .gender-toggle .gbtn.active{
+    background:var(--blue);
+    color:var(--white);
+  }
 
   main{
     max-width:720px;
@@ -558,7 +580,7 @@
     <span class="so">Koorso tababar oo dhamaystiran, oo aad la socon karto xawliga aad rabto: waxa dropshipping-ku yahay, sida ay si sax ah u shaqeyso, iyo sida loo dhiso dakhli dhab ah — oo ay ku jiraan fursadaha gaarka ah ee Soomaaliya.</span>
   </p>
   <div class="cover-card">
-    <div class="row"><b class="en">Business / Instructor</b><b class="so">Ganacsiga / Macallinka</b><span>[Your Business Name]</span></div>
+    <div class="row"><b class="en">Business / Instructor</b><b class="so">Ganacsiga / Macallinka</b><span>Adale Digital</span></div>
     <div class="row"><b class="en">Licensed to</b><b class="so">Loo ogolaaday</b><span>[Learner Name]</span></div>
     <div class="row"><b class="en">Edition</b><b class="so">Daabacaadda</b><span>2026, v1.0</span></div>
     <div class="row"><b class="en">Format</b><b class="so">Qaabka</b><span><span class="en">Interactive · Bilingual · Voice-narrated</span><span class="so">Falcelin leh · Laba-luuqadood · Cod lagu akhriyo</span></span></div>
@@ -569,8 +591,8 @@
     <span class="pill">🎓 <span class="en">Certificate</span><span class="so">Shahaado</span></span>
   </div>
   <p class="license-note">
-    <span class="en">© 2026 [Your Business Name]. All rights reserved. This guide is licensed for the exclusive use of the purchaser and their team. Resale or redistribution without written permission is prohibited.</span>
-    <span class="so">© 2026 [Magaca Ganacsigaaga]. Dhammaan xuquuqda way dhowran yihiin. Buugan waxaa loo ogol yahay isticmaalka gadashadiisa iyo kooxdiisa oo keliya. Iib-dib-u-gadis ama faafin la\'aan idan qoraal ah waa mamnuuc.</span>
+    <span class="en">© 2026 Adale Digital. All rights reserved. This guide is licensed for the exclusive use of the purchaser and their team. Resale or redistribution without written permission is prohibited.</span>
+    <span class="so">© 2026 Adale Digital. Dhammaan xuquuqda way dhowran yihiin. Buugan waxaa loo ogol yahay isticmaalka gadashadiisa iyo kooxdiisa oo keliya. Iib-dib-u-gadis ama faafin la\'aan idan qoraal ah waa mamnuuc.</span>
   </p>
 </header>
 
@@ -586,30 +608,40 @@
   <details open>
     <summary><span class="en">Contents — tap to jump to a section</span><span class="so">Waxyaabaha ku jira — taabo si aad u gudubto qaybta</span></summary>
     <ul>
-      <li><a href="#welcome"><span class="en">0. Welcome &amp; How to Use This</span><span class="so">0. Soo Dhawoow &amp; Sida Loo Isticmaalo</span></a></li>
-      <li><a href="#mod1"><span class="en">1. What Is Dropshipping?</span><span class="so">1. Waa Maxay Dropshipping-ku?</span></a></li>
-      <li><a href="#mod2"><span class="en">2. How the Process Actually Works</span><span class="so">2. Sida Habraacu Run Ahaantii u Shaqeeyo</span></a></li>
-      <li><a href="#mod3"><span class="en">3. Your Role — Daily Tasks</span><span class="so">3. Doorkaaga — Hawlaha Maalinlaha ah</span></a></li>
-      <li><a href="#mod4"><span class="en">4. Tools &amp; Platforms</span><span class="so">4. Aaladaha &amp; Barxadaha</span></a></li>
-      <li><a href="#mod5"><span class="en">5. The Somalia Opportunity</span><span class="so">5. Fursadda Soomaaliya</span></a></li>
-      <li><a href="#mod6"><span class="en">6. Other Opportunities</span><span class="so">6. Fursado Kale</span></a></li>
-      <li><a href="#mod7"><span class="en">7. Your 30-Day Checklist</span><span class="so">7. Liiska 30-ka Maalmood</span></a></li>
-      <li><a href="#mod8"><span class="en">8. Glossary</span><span class="so">8. Ereyada Muhiimka ah</span></a></li>
-      <li><a href="#faq"><span class="en">9. FAQ</span><span class="so">9. Su\'aalaha Badanaa La Isweydiiyo</span></a></li>
-      <li><a href="#certificate"><span class="en">10. Final Assessment &amp; Certificate</span><span class="so">10. Imtixaanka Ugu Dambeeya &amp; Shahaadada</span></a></li>
+      <li><a href="#welcome" target="_blank" data-section="welcome"><span class="en">Welcome &amp; How to Use This</span><span class="so">Soo Dhawoow &amp; Sida Loo Isticmaalo</span></a></li>
+      <li><a href="#mod1" target="_blank" data-section="mod1"><span class="en">What Is Dropshipping?</span><span class="so">Waa Maxay Dropshipping-ku?</span></a></li>
+      <li><a href="#mod2" target="_blank" data-section="mod2"><span class="en">How the Process Works</span><span class="so">Sida Habraacu u Shaqeeyo</span></a></li>
+      <li><a href="#mod3" target="_blank" data-section="mod3"><span class="en">Your Role — Daily Tasks</span><span class="so">Doorkaaga — Hawlaha Maalinlaha ah</span></a></li>
+      <li><a href="#mod4" target="_blank" data-section="mod4"><span class="en">Tools &amp; Platforms</span><span class="so">Aaladaha &amp; Barxadaha</span></a></li>
+      <li><a href="#mod5" target="_blank" data-section="mod5"><span class="en">The Somalia Opportunity</span><span class="so">Fursadda Soomaaliya</span></a></li>
+      <li><a href="#mod6" target="_blank" data-section="mod6"><span class="en">Other Opportunities</span><span class="so">Fursado Kale</span></a></li>
+      <li><a href="#mod7" target="_blank" data-section="mod7"><span class="en">Your 30-Day Action Plan</span><span class="so">Qorshaha 30-ka Maalmood</span></a></li>
+      <li><a href="#mod8" target="_blank" data-section="mod8"><span class="en">Glossary</span><span class="so">Ereyada Muhiimka ah</span></a></li>
+      <li><a href="#faq" target="_blank" data-section="faq"><span class="en">Frequently Asked Questions</span><span class="so">Su\'aalaha Badanaa La Isweydiiyo</span></a></li>
+      <li><a href="#certificate" target="_blank" data-section="certificate"><span class="en">Final Assessment &amp; Certificate</span><span class="so">Imtixaanka Ugu Dambeeya &amp; Shahaadada</span></a></li>
     </ul>
   </details>
 </nav>
 
 <div class="voice-settings">
   <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
     <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
     <select id="voiceSelect"></select>
     <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
     <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
     <div class="voice-note" id="voiceNote">
-      <span class="en">⚠️ No Somali voice found on this device — narration will use the closest available voice. Somali text still displays correctly.</span>
-      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin — akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo. Qoraalka Soomaaliga ahi si sax ah ayuu u muuqan doonaa.</span>
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words. Somali text still displays correctly regardless. For accurate Somali pronunciation, check your phone's Settings → Accessibility → Text-to-Speech for a downloadable Somali voice pack (availability varies by device).</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo oo si sax ah uma dhawaaqi doono ereyada Soomaaliga. Qoraalka Soomaaliga ahi si sax ah ayuu u muuqan doonaa si kastaba ha ahaatee. Si loo helo dhawaaq sax ah, hubi Settings → Accessibility → Text-to-Speech taleefankaaga haddii cod Soomaali ah la soo dejin karo (waxay ku xiran tahay nooca qalabka).</span>
+    </div>
+    <div class="voice-note show" id="genderNote">
+      <span class="en">ℹ️ Male/Woman is a best-effort guess based on the voice's name — phones don't always label this, so "Any" shows every voice available.</span>
+      <span class="so">ℹ️ Rag/Dumar waa qiyaas ugu wanaagsan oo ku salaysan magaca codka — taleefanadu had iyo jeer ma calaamadiyaan tan, marka "Dhammaan" wuxuu tusayaa dhammaan codadka la heli karo.</span>
     </div>
   </div>
 </div>
@@ -618,7 +650,7 @@
 
   <section class="module" id="welcome">
     <span class="tag"><span class="en">Start Here</span><span class="so">Ka Bilow Halkan</span></span>
-    <h2><span class="en">0. Welcome — how to use this program</span><span class="so">0. Soo Dhawoow — sida loo isticmaalo barnaamijkan</span></h2>
+    <h2><span class="en">Welcome — how to use this program</span><span class="so">Soo Dhawoow — sida loo isticmaalo barnaamijkan</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="welcome-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -638,8 +670,8 @@
   </section>
 
   <section class="module" id="mod1">
-    <span class="tag"><span class="en">Module 1</span><span class="so">Qaybta 1aad</span></span>
-    <h2><span class="en">1. What is dropshipping?</span><span class="so">1. Waa maxay dropshipping-ku?</span></h2>
+    <span class="tag"><span class="en">Foundations</span><span class="so">Aasaaska</span></span>
+    <h2><span class="en">What is dropshipping?</span><span class="so">Waa maxay dropshipping-ku?</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="mod1-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -703,8 +735,8 @@
         <div class="feedback">
           <span class="en correct-msg">✅ Correct — that gap is your margin.</span>
           <span class="so correct-msg">✅ Sax — farqigaas waa faa'iidadaada.</span>
-          <span class="en incorrect-msg">❌ Not quite — review the profit example in Module 2.</span>
-          <span class="so incorrect-msg">❌ Maaha sax — dib u eeg tusaalaha faa'iidada ee Qaybta 2aad.</span>
+          <span class="en incorrect-msg">❌ Not quite — review the profit example in "How the Process Works."</span>
+          <span class="so incorrect-msg">❌ Maaha sax — dib u eeg tusaalaha faa'iidada ee "Sida Habraacu u Shaqeeyo."</span>
         </div>
       </div>
       <div class="quiz-q">
@@ -727,8 +759,8 @@
   </section>
 
   <section class="module" id="mod2">
-    <span class="tag"><span class="en">Module 2</span><span class="so">Qaybta 2aad</span></span>
-    <h2><span class="en">2. How the process actually works</span><span class="so">2. Sida habraacu run ahaantii u shaqeeyo</span></h2>
+    <span class="tag"><span class="en">The Order Flow</span><span class="so">Socodka Dalabka</span></span>
+    <h2><span class="en">How the process actually works</span><span class="so">Sida habraacu run ahaantii u shaqeeyo</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="mod2-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -737,11 +769,11 @@
       <p class="en">Here is the full journey of one single order, from start to finish:</p>
       <p class="so">Kani waa safarka buuxa ee hal dalab, bilowga ilaa dhamaadka:</p>
       <div class="flow">
-        <div class="box"><span class="en">1. Customer visits your store</span><span class="so">1. Macmiilku booqdaa dukaankaaga</span></div><span class="arrow">→</span>
-        <div class="box"><span class="en">2. Customer pays you</span><span class="so">2. Macmiilku kuu bixiyaa</span></div><span class="arrow">→</span>
-        <div class="box"><span class="en">3. You order from supplier</span><span class="so">3. Waxaad ka dalbataa alaab-siiyaha</span></div><span class="arrow">→</span>
-        <div class="box"><span class="en">4. Supplier ships to customer</span><span class="so">4. Alaab-siiyuhu u diraa macmiilka</span></div><span class="arrow">→</span>
-        <div class="box"><span class="en">5. You keep the profit margin</span><span class="so">5. Waxaad hayataa faa'iidada</span></div>
+        <div class="box"><span class="en">Customer visits your store</span><span class="so">Macmiilku booqdaa dukaankaaga</span></div><span class="arrow">→</span>
+        <div class="box"><span class="en">Customer pays you</span><span class="so">Macmiilku kuu bixiyaa</span></div><span class="arrow">→</span>
+        <div class="box"><span class="en">You order from supplier</span><span class="so">Waxaad ka dalbataa alaab-siiyaha</span></div><span class="arrow">→</span>
+        <div class="box"><span class="en">Supplier ships to customer</span><span class="so">Alaab-siiyuhu u diraa macmiilka</span></div><span class="arrow">→</span>
+        <div class="box"><span class="en">You keep the profit margin</span><span class="so">Waxaad hayataa faa'iidada</span></div>
       </div>
       <h3><span class="en">The five building blocks you need</span><span class="so">Shanta walxood ee aad u baahan tahay</span></h3>
       <ol class="en">
@@ -817,8 +849,8 @@
   </section>
 
   <section class="module" id="mod3">
-    <span class="tag"><span class="en">Module 3</span><span class="so">Qaybta 3aad</span></span>
-    <h2><span class="en">3. Your role — day to day</span><span class="so">3. Doorkaaga — maalin walba</span></h2>
+    <span class="tag"><span class="en">Your Role</span><span class="so">Doorkaaga</span></span>
+    <h2><span class="en">Your role — day to day</span><span class="so">Doorkaaga — maalin walba</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="mod3-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -910,8 +942,8 @@
   </section>
 
   <section class="module" id="mod4">
-    <span class="tag"><span class="en">Module 4</span><span class="so">Qaybta 4aad</span></span>
-    <h2><span class="en">4. Tools &amp; platforms</span><span class="so">4. Aaladaha &amp; barxadaha</span></h2>
+    <span class="tag"><span class="en">Toolkit</span><span class="so">Aaladaha</span></span>
+    <h2><span class="en">Tools &amp; platforms</span><span class="so">Aaladaha &amp; barxadaha</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="mod4-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -972,8 +1004,8 @@
   </section>
 
   <section class="module" id="mod5">
-    <span class="tag"><span class="en">Module 5 — Local Focus</span><span class="so">Qaybta 5aad — Diirad Maxalli ah</span></span>
-    <h2><span class="en">5. The Somalia opportunity</span><span class="so">5. Fursadda Soomaaliya</span></h2>
+    <span class="tag"><span class="en">Local Focus</span><span class="so">Diirad Maxalli ah</span></span>
+    <h2><span class="en">The Somalia opportunity</span><span class="so">Fursadda Soomaaliya</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="mod5-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -1056,8 +1088,8 @@
   </section>
 
   <section class="module" id="mod6">
-    <span class="tag"><span class="en">Module 6</span><span class="so">Qaybta 6aad</span></span>
-    <h2><span class="en">6. Other opportunities</span><span class="so">6. Fursado kale</span></h2>
+    <span class="tag"><span class="en">Growth Paths</span><span class="so">Fursado Kordhin</span></span>
+    <h2><span class="en">Other opportunities</span><span class="so">Fursado kale</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="mod6-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -1120,8 +1152,8 @@
   </section>
 
   <section class="module" id="mod7">
-    <span class="tag"><span class="en">Module 7 — Action Plan</span><span class="so">Qaybta 7aad — Qorshaha Ficilka</span></span>
-    <h2><span class="en">7. Your first 30 days</span><span class="so">7. 30-kii maalmood ee ugu horreysa</span></h2>
+    <span class="tag"><span class="en">Action Plan</span><span class="so">Qorshaha Ficilka</span></span>
+    <h2><span class="en">Your first 30 days</span><span class="so">30-kii maalmood ee ugu horreysa</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="mod7-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -1156,7 +1188,7 @@
 
   <section class="module" id="mod8">
     <span class="tag"><span class="en">Reference</span><span class="so">Tixraac</span></span>
-    <h2><span class="en">8. Glossary</span><span class="so">8. Ereyada Muhiimka ah</span></h2>
+    <h2><span class="en">Glossary</span><span class="so">Ereyada Muhiimka ah</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="mod8-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -1176,8 +1208,8 @@
   </section>
 
   <section class="module" id="faq">
-    <span class="tag"><span class="en">Module 9 — FAQ</span><span class="so">Qaybta 9aad — Su'aalaha</span></span>
-    <h2><span class="en">9. Frequently asked questions</span><span class="so">9. Su'aalaha badanaa la isweydiiyo</span></h2>
+    <span class="tag"><span class="en">FAQ</span><span class="so">Su'aalaha</span></span>
+    <h2><span class="en">Frequently asked questions</span><span class="so">Su'aalaha badanaa la isweydiiyo</span></h2>
     <div class="listen-row">
       <button class="listen-btn" data-target="faq-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
       <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
@@ -1208,7 +1240,7 @@
 
   <section class="module" id="certificate">
     <span class="tag"><span class="en">Final Step</span><span class="so">Tallaabada Ugu Dambeeysa</span></span>
-    <h2><span class="en">10. Final assessment &amp; certificate</span><span class="so">10. Imtixaanka ugu dambeeya &amp; shahaadada</span></h2>
+    <h2><span class="en">Final assessment &amp; certificate</span><span class="so">Imtixaanka ugu dambeeya &amp; shahaadada</span></h2>
     <p class="en">Once you've answered the knowledge checks in Modules 1–6, calculate your score below.</p>
     <p class="so">Marka aad ka jawaabto imtixaanada Qaybaha 1-6, xisaabi dhibcahaaga hoos.</p>
     <button class="print-btn" onclick="calcScore()">📊 <span class="en">Calculate My Score</span><span class="so">Xisaabi Dhibcahayga</span></button>
@@ -1223,14 +1255,12 @@
       <p class="en" style="font-size:0.85rem;color:var(--muted);">has successfully completed the Dropshipping Mastery Program</p>
       <p class="so" style="font-size:0.85rem;color:var(--muted);">uu si guul leh u dhammaystiray Barnaamijka Xirfadeed ee Dropshipping-ka</p>
       <div class="scoreline" id="certScoreline"><span class="en">Score: not yet calculated</span><span class="so">Dhibco: weli lama xisaabin</span></div>
-      <div class="scoreline">[Your Business Name] · <span id="certDate"></span></div>
+      <div class="scoreline">Adale Digital · <span id="certDate"></span></div>
       <button class="print-btn" onclick="window.print()">🖨️ <span class="en">Print / Save as PDF</span><span class="so">Daabac / Kaydi PDF</span></button>
     </div>
   </section>
 
 </main>
-
-<button class="fab" id="fabPlayAll">🔊 <span class="en">Listen to page</span><span class="so">Dhegayso boggan</span></button>
 
 <footer>
   <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
@@ -1292,7 +1322,7 @@
     if(answered < total){
       msg = lang === 'so'
         ? ('Waxaad ka jawaabtay ' + answered + ' / ' + total + ' su\'aalood. Fadlan dhammaystir dhammaan imtixaanada qaybaha 1-6 ka hor.')
-        : ('You\'ve answered ' + answered + ' / ' + total + ' questions. Please finish all Module 1–6 quizzes first.');
+        : ('You\'ve answered ' + answered + ' / ' + total + ' questions. Please finish all the module quizzes first.');
     } else {
       msg = lang === 'so'
         ? ('Dhibcahaaga: ' + correct + ' / ' + total + ' (' + pct + '%)')
@@ -1308,33 +1338,57 @@
 
   // ---------- Text-to-speech ----------
   let voices = [];
+  let genderFilter = 'any';
   const voiceSelect = document.getElementById('voiceSelect');
   const rateRange = document.getElementById('rateRange');
   const voiceNote = document.getElementById('voiceNote');
   let currentBtn = null;
 
+  const FEMALE_HINTS = ['female','samantha','victoria','karen','moira','tessa','fiona','zira','susan','allison','ava','samira','salli','joanna','kendra','kimberly','amy','emma','ivy','salma','laila'];
+  const MALE_HINTS = ['male','alex','daniel','fred','thomas','david','mark','james','george','arthur','oliver','ryan','justin','matthew','majed','tarik'];
+  function detectGender(voice){
+    const n = (voice.name || '').toLowerCase();
+    if(FEMALE_HINTS.some(h => n.includes(h))) return 'female';
+    if(MALE_HINTS.some(h => n.includes(h))) return 'male';
+    return 'unknown';
+  }
+
+  function setGender(g){
+    genderFilter = g;
+    document.querySelectorAll('.gbtn').forEach(b => b.classList.toggle('active', b.dataset.gender === g));
+    refreshVoiceList();
+  }
+
   function refreshVoiceList(){
     if(!voices.length) return;
     const lang = document.documentElement.getAttribute('data-lang');
     voiceSelect.innerHTML = '';
-    voices.forEach((v, i) => {
+
+    let pool = voices.map((v, i) => ({v, i}));
+    if(genderFilter !== 'any'){
+      const filtered = pool.filter(p => detectGender(p.v) === genderFilter);
+      if(filtered.length) pool = filtered; // fall back to full list if none match, rather than showing empty
+    }
+
+    pool.forEach(p => {
       const opt = document.createElement('option');
-      opt.value = i;
-      opt.textContent = v.name + ' (' + v.lang + ')';
+      opt.value = p.i;
+      opt.textContent = p.v.name + ' (' + p.v.lang + ')';
       voiceSelect.appendChild(opt);
     });
+
     if(lang === 'so'){
-      const soIdx = voices.findIndex(v => v.lang && v.lang.toLowerCase().startsWith('so'));
-      if(soIdx >= 0){
-        voiceSelect.value = soIdx;
+      const soMatch = pool.find(p => p.v.lang && p.v.lang.toLowerCase().startsWith('so'));
+      if(soMatch){
+        voiceSelect.value = soMatch.i;
         voiceNote.classList.remove('show');
       } else {
         voiceNote.classList.add('show');
       }
     } else {
       voiceNote.classList.remove('show');
-      const enIdx = voices.findIndex(v => v.lang && v.lang.startsWith('en'));
-      if(enIdx >= 0) voiceSelect.value = enIdx;
+      const enMatch = pool.find(p => p.v.lang && p.v.lang.startsWith('en'));
+      if(enMatch) voiceSelect.value = enMatch.i;
     }
   }
   function populateVoices(){
@@ -1345,13 +1399,12 @@
     populateVoices();
     speechSynthesis.onvoiceschanged = populateVoices;
   } else {
-    document.querySelectorAll('.listen-btn, #fabPlayAll').forEach(b => { b.disabled = true; });
+    document.querySelectorAll('.listen-btn').forEach(b => { b.disabled = true; });
   }
 
   function stopSpeech(){
     speechSynthesis.cancel();
     if(currentBtn){ currentBtn.classList.remove('playing'); }
-    document.getElementById('fabPlayAll').classList.remove('playing');
     currentBtn = null;
   }
 
@@ -1376,9 +1429,19 @@
     });
   });
 
-  document.getElementById('fabPlayAll').addEventListener('click', function(){
-    if(this.classList.contains('playing')){ stopSpeech(); return; }
-    speakText(document.querySelector('main').innerText, this);
+  // ---------- Open each section in its own new window/tab ----------
+  function openSection(event, id){
+    event.preventDefault();
+    const baseUrl = window.location.href.split('#')[0];
+    const win = window.open(baseUrl + '#' + id, '_blank');
+    if(!win){
+      // Popup blocked (common inside embedded/sandboxed previews) — fall back to jumping in-page.
+      window.location.hash = id;
+    }
+    return false;
+  }
+  document.querySelectorAll('nav.toc a[data-section]').forEach(a => {
+    a.addEventListener('click', (e) => openSection(e, a.dataset.section));
   });
 </script>
 
