@@ -4,7 +4,574 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your 30-Day Action Plan — Dropshipping Mastery Program</title>
-<link rel="stylesheet" href="styles.css">
+<style>
+:root{
+  --navy:#173357;
+  --blue:#3C7DC4;
+  --sky:#EAF2FB;
+  --gold:#C99A3C;
+  --ink:#1B2430;
+  --muted:#5B6B7C;
+  --line:#DCE6F0;
+  --white:#FFFFFF;
+  --good:#2E8B57;
+  --bad:#B0392B;
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+[data-lang="en"] .so{display:none !important;}
+[data-lang="so"] .en{display:none !important;}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--sky);
+  color:var(--ink);
+  line-height:1.6;
+  padding-bottom:60px;
+}
+
+/* ---------- Top control bar ---------- */
+.control-bar{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background:var(--navy);
+  color:var(--white);
+  padding:8px 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+  font-size:0.82rem;
+}
+.lang-toggle{
+  display:inline-flex;
+  background:rgba(255,255,255,0.12);
+  border-radius:999px;
+  padding:3px;
+}
+.lang-toggle button{
+  border:none;
+  background:transparent;
+  color:var(--white);
+  padding:6px 14px;
+  border-radius:999px;
+  font-size:0.82rem;
+  font-weight:700;
+  cursor:pointer;
+}
+.lang-toggle button.active{
+  background:var(--gold);
+  color:var(--navy);
+}
+
+/* ---------- Page navigation (Home / Prev / Next) ---------- */
+.pagenav{
+  max-width:720px;
+  margin:14px auto 0;
+  padding:0 16px;
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.pagenav a{
+  background:var(--white);
+  border:1px solid var(--line);
+  color:var(--navy);
+  text-decoration:none;
+  font-size:0.82rem;
+  font-weight:600;
+  padding:8px 14px;
+  border-radius:999px;
+  white-space:nowrap;
+}
+.pagenav a:hover{background:var(--sky);}
+.pagenav a.home{color:var(--blue);}
+
+/* ---------- Cover ---------- */
+header.cover{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:var(--white);
+  padding:40px 20px 32px;
+  text-align:center;
+}
+header.cover .badge{
+  display:inline-block;
+  background:var(--gold);
+  color:var(--navy);
+  font-weight:800;
+  font-size:0.72rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:5px 14px;
+  border-radius:999px;
+  margin-bottom:14px;
+}
+header.cover h1{
+  margin:0 0 8px;
+  font-size:1.7rem;
+  line-height:1.3;
+}
+header.cover p.tagline{
+  margin:0 auto;
+  font-size:1rem;
+  opacity:0.92;
+  max-width:520px;
+}
+.cover-card{
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.3);
+  border-radius:var(--radius);
+  max-width:420px;
+  margin:22px auto 0;
+  padding:16px 18px;
+  text-align:left;
+  font-size:0.88rem;
+}
+.cover-card .row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:4px 12px;
+  padding:6px 0;
+  border-bottom:1px dashed rgba(255,255,255,0.25);
+}
+.cover-card .row:last-child{border-bottom:none;}
+.cover-card .row b{opacity:0.85;font-weight:600;margin-right:8px;}
+.meta-row{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+.pill{
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.35);
+  padding:5px 12px;
+  border-radius:999px;
+  font-size:0.76rem;
+}
+.license-note{
+  max-width:520px;
+  margin:16px auto 0;
+  font-size:0.72rem;
+  opacity:0.75;
+}
+
+nav.toc{
+  max-width:720px;
+  margin:18px auto 0;
+  padding:0 16px;
+}
+nav.toc details{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:10px 14px;
+}
+nav.toc summary{
+  font-weight:600;
+  cursor:pointer;
+  color:var(--navy);
+  font-size:0.95rem;
+}
+nav.toc ul{
+  list-style:none;
+  margin:10px 0 4px;
+  padding:0;
+  display:grid;
+  gap:6px;
+}
+nav.toc a{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--blue);
+  text-decoration:none;
+  font-size:0.9rem;
+  background:var(--sky);
+  padding:10px 12px;
+  border-radius:10px;
+}
+nav.toc a:hover{background:#DCEAFB;}
+nav.toc a .go{font-size:0.75rem;color:var(--muted);}
+
+.voice-settings{
+  max-width:720px;
+  margin:14px auto 0;
+  padding:0 16px 8px;
+}
+.voice-settings-inner{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:12px 16px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  font-size:0.85rem;
+  color:var(--muted);
+}
+.voice-settings-inner select, .voice-settings-inner input[type=range]{
+  accent-color:var(--blue);
+}
+.voice-note{
+  font-size:0.76rem;
+  color:var(--bad);
+  display:none;
+  width:100%;
+}
+.voice-note.show{display:block;}
+#genderNote{color:var(--muted);}
+.gender-toggle{
+  display:inline-flex;
+  background:var(--sky);
+  border-radius:999px;
+  padding:3px;
+  gap:2px;
+}
+.gender-toggle .gbtn{
+  border:none;
+  background:transparent;
+  color:var(--navy);
+  padding:5px 10px;
+  border-radius:999px;
+  font-size:0.78rem;
+  font-weight:600;
+  cursor:pointer;
+}
+.gender-toggle .gbtn.active{
+  background:var(--blue);
+  color:var(--white);
+}
+
+main{
+  max-width:720px;
+  margin:0 auto;
+  padding:20px 16px 10px;
+}
+
+section.module{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px 18px;
+  margin-bottom:18px;
+}
+section.module .tag{
+  display:inline-block;
+  background:var(--sky);
+  color:var(--navy);
+  font-size:0.72rem;
+  font-weight:700;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+section.module h2{
+  margin:0 0 6px;
+  font-size:1.25rem;
+  color:var(--navy);
+}
+section.module h3{
+  font-size:1.02rem;
+  color:var(--navy);
+  margin:18px 0 6px;
+}
+section.module p{
+  margin:8px 0;
+  color:var(--ink);
+  font-size:0.96rem;
+}
+section.module ul, section.module ol{
+  margin:8px 0;
+  padding-left:22px;
+}
+section.module li{
+  margin-bottom:6px;
+  font-size:0.95rem;
+}
+.callout{
+  background:var(--sky);
+  border-left:4px solid var(--blue);
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0;
+  font-size:0.92rem;
+}
+.callout.gold{
+  border-left-color:var(--gold);
+  background:#FBF3E3;
+}
+.callout strong{color:var(--navy);}
+
+.listen-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:14px;
+}
+button.listen-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--navy);
+  color:var(--white);
+  border:none;
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:0.85rem;
+  cursor:pointer;
+}
+button.listen-btn.playing{background:var(--good);}
+button.stop-btn{
+  background:var(--white);
+  color:var(--navy);
+  border:1px solid var(--line);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:0.85rem;
+  cursor:pointer;
+}
+
+.flow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+  justify-content:center;
+  margin:16px 0;
+}
+.flow .box{
+  background:var(--sky);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:10px 12px;
+  font-size:0.82rem;
+  text-align:center;
+  color:var(--navy);
+  font-weight:600;
+  min-width:100px;
+}
+.flow .arrow{
+  color:var(--gold);
+  font-size:1.1rem;
+}
+
+table.compare{
+  width:100%;
+  border-collapse:collapse;
+  font-size:0.85rem;
+  margin:12px 0;
+}
+table.compare th, table.compare td{
+  border:1px solid var(--line);
+  padding:8px;
+  text-align:left;
+  vertical-align:top;
+}
+table.compare th{
+  background:var(--sky);
+  color:var(--navy);
+}
+
+.checklist label{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  padding:8px 0;
+  border-bottom:1px dashed var(--line);
+  font-size:0.94rem;
+  cursor:pointer;
+}
+.checklist label:last-child{border-bottom:none;}
+.checklist input[type=checkbox]{
+  margin-top:3px;
+  width:18px;
+  height:18px;
+  accent-color:var(--good);
+  flex-shrink:0;
+}
+.checklist input:checked + span{
+  text-decoration:line-through;
+  color:var(--muted);
+}
+
+.glossary dt{
+  font-weight:700;
+  color:var(--navy);
+  margin-top:10px;
+}
+.glossary dd{
+  margin:2px 0 0;
+  font-size:0.92rem;
+  color:var(--ink);
+}
+
+/* ---------- Quiz ---------- */
+.quiz{
+  background:var(--sky);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px 14px 6px;
+  margin-top:18px;
+}
+.quiz-header{
+  font-weight:700;
+  color:var(--navy);
+  font-size:0.95rem;
+  margin-bottom:8px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.quiz-q{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:12px 14px;
+  margin-bottom:10px;
+}
+.quiz-q p.stem{
+  font-weight:600;
+  margin:0 0 8px;
+  font-size:0.92rem;
+  color:var(--ink);
+}
+.quiz-q label{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  padding:5px 0;
+  font-size:0.9rem;
+  cursor:pointer;
+}
+.quiz-q input[type=radio]{
+  margin-top:3px;
+  accent-color:var(--blue);
+}
+.feedback{
+  margin-top:8px;
+  padding:8px 10px;
+  border-radius:8px;
+  font-size:0.85rem;
+  display:none;
+}
+.feedback.correct{
+  display:block;
+  background:#E4F3EA;
+  color:var(--good);
+}
+.feedback.incorrect{
+  display:block;
+  background:#FBEAE3;
+  color:var(--bad);
+}
+
+.badge-good{
+  background:#E4F3EA;
+  color:var(--good);
+  padding:2px 8px;
+  border-radius:6px;
+  font-size:0.75rem;
+  font-weight:700;
+}
+
+/* ---------- Certificate ---------- */
+.cert{
+  border:3px double var(--gold);
+  border-radius:12px;
+  padding:26px 20px;
+  text-align:center;
+  background:linear-gradient(180deg,#FFFFFF,#FBF7EE);
+}
+.cert .star{font-size:22px;color:var(--gold);}
+.cert h3{
+  color:var(--navy);
+  margin:6px 0 2px;
+  font-size:1.1rem;
+}
+.cert input[type=text]{
+  border:none;
+  border-bottom:2px solid var(--gold);
+  background:transparent;
+  text-align:center;
+  font-size:1.1rem;
+  color:var(--navy);
+  font-weight:700;
+  padding:6px 4px;
+  width:80%;
+  margin:10px 0;
+}
+.cert .scoreline{
+  margin-top:14px;
+  font-size:0.9rem;
+  color:var(--muted);
+}
+.print-btn{
+  background:var(--gold);
+  color:var(--navy);
+  border:none;
+  padding:10px 18px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:0.88rem;
+  cursor:pointer;
+  margin-top:14px;
+}
+@media print{
+  .control-bar, .pagenav, nav.toc, .voice-settings, .print-btn, .profile-bar, footer{display:none !important;}
+  /* On the certificate page, printing should show ONLY the certificate — not the exam questions. */
+  #certificate > *:not(.cert){display:none !important;}
+  body{background:white;padding-bottom:0;}
+  main{padding:0;max-width:none;}
+  section.module{border:none;padding:0;}
+}
+
+/* ---------- Learner profile bar ---------- */
+.profile-bar{
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+  padding:8px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  font-size:0.82rem;
+  color:var(--muted);
+  flex-wrap:wrap;
+}
+.profile-bar input{
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:6px 12px;
+  font-size:0.82rem;
+  max-width:220px;
+  color:var(--ink);
+  background:var(--sky);
+}
+.profile-bar .saved-hint{font-size:0.72rem;color:var(--muted);opacity:0.8;}
+
+footer{
+  text-align:center;
+  color:var(--muted);
+  font-size:0.8rem;
+  padding:24px 16px 40px;
+}
+
+@media (min-width:640px){
+  header.cover h1{font-size:2.1rem;}
+}
+
+</style>
 </head>
 <body>
 
@@ -14,6 +581,13 @@
     <button id="btnEn" class="active" onclick="setLang('en')">English</button>
     <button id="btnSo" onclick="setLang('so')">Soomaali</button>
   </div>
+</div>
+
+<div class="profile-bar">
+  👤 <span class="en">Your name:</span><span class="so">Magacaaga:</span>
+  <input id="profileName" placeholder="Type your name (auto-saved)">
+  <span class="saved-hint en">saved on this device — auto-fills your certificate</span>
+  <span class="saved-hint so">waa lagu kaydiyaa qalabkan — si toos ah ayuu u buuxinayaa shahaadadaada</span>
 </div>
 
 <nav class="pagenav">
@@ -83,6 +657,202 @@
   <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
 </footer>
 
-<script src="app.js"></script>
+<script>
+// ---------- Storage helpers (guarded — some browsers block storage on file:// pages) ----------
+function safeGet(key){ try{ return localStorage.getItem(key); }catch(e){ return null; } }
+function safeSet(key, val){ try{ localStorage.setItem(key, val); }catch(e){} }
+
+// ---------- Learner profile (remembers the learner's name across pages/visits) ----------
+function initProfile(){
+  const stored = safeGet('dm_learner_name') || '';
+  const pi = document.getElementById('profileName');
+  if(pi){
+    pi.value = stored;
+    pi.addEventListener('input', () => safeSet('dm_learner_name', pi.value));
+  }
+  const cn = document.getElementById('certName');
+  if(cn){
+    if(stored && !cn.value) cn.value = stored;
+    cn.addEventListener('input', () => safeSet('dm_learner_name', cn.value));
+  }
+}
+
+// ---------- Language ----------
+function getQueryLang(){
+  return new URLSearchParams(window.location.search).get('lang');
+}
+
+function refreshSiteLinks(lang){
+  document.querySelectorAll('a.sitelink[data-page]').forEach(a => {
+    const page = a.dataset.page;
+    a.setAttribute('href', page + (lang && lang !== 'en' ? '?lang=' + lang : ''));
+  });
+}
+
+function setLang(lang){
+  document.documentElement.setAttribute('data-lang', lang);
+  const btnEn = document.getElementById('btnEn');
+  const btnSo = document.getElementById('btnSo');
+  if(btnEn) btnEn.classList.toggle('active', lang === 'en');
+  if(btnSo) btnSo.classList.toggle('active', lang === 'so');
+  refreshSiteLinks(lang);
+  if(typeof refreshVoiceList === 'function') refreshVoiceList();
+}
+
+// ---------- Quiz grading ----------
+function gradeOne(input){
+  const qBlock = input.closest('.quiz-q');
+  const fb = qBlock.querySelector('.feedback');
+  const isCorrect = input.dataset.correct === 'true';
+  fb.classList.remove('correct','incorrect');
+  fb.classList.add(isCorrect ? 'correct' : 'incorrect');
+  fb.querySelectorAll('.correct-msg').forEach(el => el.style.display = isCorrect ? '' : 'none');
+  fb.querySelectorAll('.incorrect-msg').forEach(el => el.style.display = isCorrect ? 'none' : '');
+}
+
+function calcScore(){
+  const groups = {};
+  document.querySelectorAll('.quiz input[type=radio]').forEach(inp => {
+    if(!groups[inp.name]) groups[inp.name] = {answered:false, correct:false};
+    if(inp.checked){
+      groups[inp.name].answered = true;
+      groups[inp.name].correct = inp.dataset.correct === 'true';
+    }
+  });
+  const names = Object.keys(groups);
+  const total = names.length;
+  const answered = names.filter(n => groups[n].answered).length;
+  const correct = names.filter(n => groups[n].correct).length;
+  const pct = total ? Math.round((correct/total)*100) : 0;
+  const lang = document.documentElement.getAttribute('data-lang');
+  let msg;
+  if(answered < total){
+    msg = lang === 'so'
+      ? ('Waxaad ka jawaabtay ' + answered + ' / ' + total + ' su\'aalood. Fadlan dhammaystir dhammaan su\'aalaha imtixaanka ugu dambeeya ka hor.')
+      : ('You\'ve answered ' + answered + ' / ' + total + ' questions. Please finish all the final exam questions first.');
+  } else {
+    msg = lang === 'so'
+      ? ('Dhibcahaaga: ' + correct + ' / ' + total + ' (' + pct + '%)')
+      : ('Your score: ' + correct + ' / ' + total + ' (' + pct + '%)');
+  }
+  const scoreResultEl = document.getElementById('scoreResult');
+  if(scoreResultEl) scoreResultEl.textContent = msg;
+  if(answered === total){
+    const certLine = document.getElementById('certScoreline');
+    if(certLine){
+      certLine.innerHTML = '<span class="en">Score: ' + correct + '/' + total + ' (' + pct + '%)' + (pct>=70 ? ' — Passed' : ' — Review recommended') + '</span>' +
+                            '<span class="so">Dhibco: ' + correct + '/' + total + ' (' + pct + '%)' + (pct>=70 ? ' — Ku Guuleystay' : ' — Dib u eegis ayaa lagula talinayaa') + '</span>';
+    }
+  }
+}
+
+// ---------- Text-to-speech ----------
+let voices = [];
+let genderFilter = 'any';
+let currentBtn = null;
+
+const FEMALE_HINTS = ['female','samantha','victoria','karen','moira','tessa','fiona','zira','susan','allison','ava','samira','salli','joanna','kendra','kimberly','amy','emma','ivy','salma','laila'];
+const MALE_HINTS = ['male','alex','daniel','fred','thomas','david','mark','james','george','arthur','oliver','ryan','justin','matthew','majed','tarik'];
+function detectGender(voice){
+  const n = (voice.name || '').toLowerCase();
+  if(FEMALE_HINTS.some(h => n.includes(h))) return 'female';
+  if(MALE_HINTS.some(h => n.includes(h))) return 'male';
+  return 'unknown';
+}
+
+function setGender(g){
+  genderFilter = g;
+  document.querySelectorAll('.gbtn').forEach(b => b.classList.toggle('active', b.dataset.gender === g));
+  refreshVoiceList();
+}
+
+function refreshVoiceList(){
+  const voiceSelect = document.getElementById('voiceSelect');
+  const voiceNote = document.getElementById('voiceNote');
+  if(!voiceSelect || !voices.length) return;
+  const lang = document.documentElement.getAttribute('data-lang');
+  voiceSelect.innerHTML = '';
+
+  let pool = voices.map((v, i) => ({v, i}));
+  if(genderFilter !== 'any'){
+    const filtered = pool.filter(p => detectGender(p.v) === genderFilter);
+    if(filtered.length) pool = filtered; // fall back to full list if none match, rather than showing empty
+  }
+
+  pool.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p.i;
+    opt.textContent = p.v.name + ' (' + p.v.lang + ')';
+    voiceSelect.appendChild(opt);
+  });
+
+  if(lang === 'so'){
+    const soMatch = pool.find(p => p.v.lang && p.v.lang.toLowerCase().startsWith('so'));
+    if(soMatch){
+      voiceSelect.value = soMatch.i;
+      if(voiceNote) voiceNote.classList.remove('show');
+    } else if(voiceNote){
+      voiceNote.classList.add('show');
+    }
+  } else {
+    if(voiceNote) voiceNote.classList.remove('show');
+    const enMatch = pool.find(p => p.v.lang && p.v.lang.startsWith('en'));
+    if(enMatch) voiceSelect.value = enMatch.i;
+  }
+}
+function populateVoices(){
+  voices = speechSynthesis.getVoices();
+  refreshVoiceList();
+}
+if('speechSynthesis' in window){
+  populateVoices();
+  speechSynthesis.onvoiceschanged = populateVoices;
+} else {
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.listen-btn').forEach(b => { b.disabled = true; });
+  });
+}
+
+function stopSpeech(){
+  speechSynthesis.cancel();
+  if(currentBtn){ currentBtn.classList.remove('playing'); }
+  currentBtn = null;
+}
+
+function speakText(text, btn){
+  stopSpeech();
+  const voiceSelect = document.getElementById('voiceSelect');
+  const rateRange = document.getElementById('rateRange');
+  const utter = new SpeechSynthesisUtterance(text);
+  const vIdx = voiceSelect ? voiceSelect.value : null;
+  if(voices[vIdx]) utter.voice = voices[vIdx];
+  utter.rate = rateRange ? parseFloat(rateRange.value) : 0.9;
+  utter.onend = stopSpeech;
+  utter.onerror = stopSpeech;
+  currentBtn = btn;
+  if(btn) btn.classList.add('playing');
+  speechSynthesis.speak(utter);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.listen-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const el = document.getElementById(targetId);
+      speakText(el.innerText, btn);
+    });
+  });
+
+  const certDateEl = document.getElementById('certDate');
+  if(certDateEl) certDateEl.textContent = new Date().toDateString();
+
+  initProfile();
+
+  // Initialize language from the URL (?lang=so) so it can be carried across pages via links.
+  const initialLang = getQueryLang() === 'so' ? 'so' : 'en';
+  setLang(initialLang);
+});
+
+</script>
 </body>
 </html>
