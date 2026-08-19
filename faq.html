@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="module-8.html" class="sitelink" data-page="module-8.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="certificate.html" class="sitelink" data-page="certificate.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="faq">
+    <span class="tag"><span class="en">FAQ</span><span class="so">Su'aalaha</span></span>
+    <h2><span class="en">Frequently asked questions</span><span class="so">Su'aalaha badanaa la isweydiiyo</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="faq-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="faq-text">
+      <h3 class="en">How much money do I need to start?</h3>
+      <h3 class="so">Immisa lacag ayaan u baahanahay inaan ku bilaabo?</h3>
+      <p class="en">You can start with as little as $50–$200 for basic ads and samples if you begin on free social platforms rather than a paid store builder.</p>
+      <p class="so">Waxaad ku bilaabi kartaa in ka yar $50–$200 xayaysiisyo aasaasi ah iyo tusaale haddii aad ku bilowdo barxadaha bulshada ee bilaashka ah halkii aad dukaan lacag ah ka dhisi lahayd.</p>
+      <h3 class="en">Is dropshipping legal?</h3>
+      <h3 class="so">Dropshipping-ku ma sharci baa?</h3>
+      <p class="en">Yes — it's a legitimate retail model used by major companies worldwide. Just be transparent with customers about delivery times and honor your return/refund policy.</p>
+      <p class="so">Haa — waa qaab ganacsi sharci ah oo ay isticmaalaan shirkado waaweyn adduunka oo dhan. Kaliya la daacad ahaw macaamiisha xagga waqtiga gaarsiinta oo dhawra siyaasaddaada soo celinta.</p>
+      <h3 class="en">How long until I see profit?</h3>
+      <h3 class="so">Immisa waqti ka hor inta aan faa'iido arko?</h3>
+      <p class="en">Most sellers need 4–12 weeks of testing products and ads before finding a consistent winner. Treat the first month as learning, not guaranteed income.</p>
+      <p class="so">Inta badan iibiyayaasha waxay u baahan yihiin 4–12 toddobaad oo ay ku tijaabinayaan alaabta iyo xayaysiisyada ka hor inta aysan helin mid joogto ah. U qaado bisha koowaad sida barasho, ma aha dakhli la hubo.</p>
+      <h3 class="en">Do I need a business license?</h3>
+      <h3 class="so">Ma u baahanahay shatiga ganacsiga?</h3>
+      <p class="en">It depends on your country and how you get paid. Check local regulations before scaling up — this guide is educational, not legal advice.</p>
+      <p class="so">Waxay ku xiran tahay wadankaaga iyo sida lagu bixiyo lacagta. Hubi sharciyada maxalliga ah ka hor inta aad ballaarin. Buugani waa mid waxbarasho, maaha talo sharci ah.</p>
+      <h3 class="en">What if a customer complains a package never arrived?</h3>
+      <h3 class="so">Maxaan sameeyaa haddii macmiil ka cabanayo alaab aan gaarin?</h3>
+      <p class="en">Track the order with your supplier immediately, communicate honestly with the customer, and offer a refund or reship per your policy. Fast, honest handling protects your reputation.</p>
+      <p class="so">Isla markiiba la soco dalabka alaab-siiyaha, si daacad ah ula xiriir macmiilka, oo bixi lacag-celin ama dib-u-dir sida siyaasaddaada tahay. Xamaasad iyo daacadnimo ayaa ilaalisa sumcaddaada.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

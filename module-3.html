@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Role — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="module-2.html" class="sitelink" data-page="module-2.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="module-4.html" class="sitelink" data-page="module-4.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="mod3">
+    <span class="tag"><span class="en">Your Role</span><span class="so">Doorkaaga</span></span>
+    <h2><span class="en">Your role — day to day</span><span class="so">Doorkaaga — maalin walba</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="mod3-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="mod3-text">
+      <h3><span class="en">Daily</span><span class="so">Maalin kasta</span></h3>
+      <ul class="en">
+        <li>Check and confirm new orders; place matching orders with the supplier</li>
+        <li>Reply to customer messages (WhatsApp, Facebook, Instagram, store chat)</li>
+        <li>Track packages in transit and flag delays</li>
+        <li>Post or schedule at least one piece of content</li>
+      </ul>
+      <ul class="so">
+        <li>Hubi oo xaqiiji dalabyada cusub; u dir dalabyada alaab-siiyaha</li>
+        <li>Ka jawaab fariimaha macaamiisha (WhatsApp, Facebook, Instagram, dukaanka)</li>
+        <li>La soco xirmooyinka socda oo calaamadi dib u dhac</li>
+        <li>Dir ama jadwali ugu yaraan hal qayb waxqabad ah</li>
+      </ul>
+      <h3><span class="en">Weekly</span><span class="so">Toddobaad kasta</span></h3>
+      <ul class="en">
+        <li>Review which products are selling well vs. not, and why</li>
+        <li>Check ad performance and adjust budget</li>
+        <li>Research 2–3 new potential products</li>
+        <li>Respond to reviews/feedback and handle returns</li>
+      </ul>
+      <ul class="so">
+        <li>Dib u eeg alaabta si fiican u iibisa iyo tan aan u iibin, iyo sababta</li>
+        <li>Hubi waxqabadka xayaysiiska oo hagaaji miisaaniyadda</li>
+        <li>Baadh 2–3 alaab oo cusub</li>
+        <li>Ka jawaab faallooyinka oo maamul soo celinta</li>
+      </ul>
+      <h3><span class="en">Monthly</span><span class="so">Bil kasta</span></h3>
+      <ul class="en">
+        <li>Review overall profit vs. spend</li>
+        <li>Evaluate the supplier relationship — pricing, speed, quality</li>
+        <li>Plan next month's content calendar</li>
+      </ul>
+      <ul class="so">
+        <li>Dib u eeg faa'iidada guud iyo kharashka</li>
+        <li>Qiimee xiriirka alaab-siiyaha — qiimaha, xawaaraha, tayada</li>
+        <li>Qorshee jadwalka waxqabadka bisha soo socota</li>
+      </ul>
+      <div class="callout">
+        <strong class="en">Most important skill to build first:</strong><strong class="so">Xirfadda ugu muhiimsan ee la bilaabo:</strong>
+        <span class="en"> fast, friendly, honest customer communication. Trust turns a one-time buyer into a repeat customer.</span>
+        <span class="so"> isgaarsiin degdeg ah, saaxiibtinimo, iyo daacadnimo. Kalsoonidu waxay macmiil hal mar iibsaday u rogtaa mid soo noqnoqda.</span>
+      </div>
+    </div>
+    <div class="quiz" data-qcount="3">
+      <div class="quiz-header">✅ <span class="en">Knowledge Check</span><span class="so">Hubinta Aqoonta</span></div>
+      <div class="quiz-q">
+        <p class="stem en">Which task should happen every single day?</p>
+        <p class="stem so">Hawshee ayaa maalin walba ah?</p>
+        <label><input type="radio" name="q3_1" data-correct="true" onchange="gradeOne(this)"><span class="en">Replying to customer messages</span><span class="so">Ka jawaabidda fariimaha macaamiisha</span></label>
+        <label><input type="radio" name="q3_1" data-correct="false" onchange="gradeOne(this)"><span class="en">Reviewing the whole month's profit</span><span class="so">Dib u eegista faa'iidada bisha oo dhan</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite — that's a monthly task.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — taasi waa hawl bilo ah.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">What is described as the most important skill to build first?</p>
+        <p class="stem so">Maxaa lagu sifeeyay xirfadda ugu muhiimsan ee la bilaabo?</p>
+        <label><input type="radio" name="q3_2" data-correct="false" onchange="gradeOne(this)"><span class="en">Graphic design</span><span class="so">Naqshadeynta sawirka</span></label>
+        <label><input type="radio" name="q3_2" data-correct="true" onchange="gradeOne(this)"><span class="en">Fast, honest customer communication</span><span class="so">Isgaarsiin degdeg ah oo daacad ah</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite — re-read the callout box.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — dib u akhri sanduuqa fikradda.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">Researching new potential products is a task done how often?</p>
+        <p class="stem so">Baadhitaanka alaabta cusub waa hawl la sameeyo immisa jeer?</p>
+        <label><input type="radio" name="q3_3" data-correct="false" onchange="gradeOne(this)"><span class="en">Daily</span><span class="so">Maalin kasta</span></label>
+        <label><input type="radio" name="q3_3" data-correct="true" onchange="gradeOne(this)"><span class="en">Weekly</span><span class="so">Toddobaad kasta</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite — check the weekly list.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — hubi liiska toddobaadlaha.</span>
+        </div>
+      </div>
+    </div>
+    <label class="checklist" style="border:none;padding-top:14px;">
+      <input type="checkbox" class="tracker">
+      <span><span class="en">I know what my daily, weekly, and monthly tasks look like</span><span class="so">Waan ogahay hawlahayga maalinlaha, toddobaadlaha, iyo bishii</span></span>
+    </label>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

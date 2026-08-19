@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glossary — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="module-7.html" class="sitelink" data-page="module-7.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="faq.html" class="sitelink" data-page="faq.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="mod8">
+    <span class="tag"><span class="en">Reference</span><span class="so">Tixraac</span></span>
+    <h2><span class="en">Glossary</span><span class="so">Ereyada Muhiimka ah</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="mod8-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <dl class="glossary" id="mod8-text">
+      <dt class="en">Niche</dt><dd class="en">A focused product category or audience.</dd>
+      <dt class="so">Niche</dt><dd class="so">Qayb alaab ama dhagaystayaal oo la xaqiijiyay.</dd>
+      <dt class="en">Supplier</dt><dd class="en">The business that ships the product once an order comes in.</dd>
+      <dt class="so">Alaab-siiye</dt><dd class="so">Ganacsiga u diri alaabta marka dalab yimaado.</dd>
+      <dt class="en">Margin</dt><dd class="en">Profit left after supplier cost, shipping, and fees.</dd>
+      <dt class="so">Faa'iido</dt><dd class="so">Waxa hadhay kadib kharashka alaab-siiyaha iyo khidmadaha.</dd>
+      <dt class="en">Cash on delivery (COD)</dt><dd class="en">Customer pays cash when the product arrives.</dd>
+      <dt class="so">Cash on delivery (COD)</dt><dd class="so">Macmiilku wuxuu ku bixiyaa lacag caddaan marka alaabtu timaado.</dd>
+      <dt class="en">Mobile money</dt><dd class="en">A phone-based wallet (like EVC Plus) used to send, receive, and pay.</dd>
+      <dt class="so">Lacagta mobilka</dt><dd class="so">Boorso taleefan ku salaysan (sida EVC Plus) oo lagu diro, qaato, oo lagu bixiyo.</dd>
+    </dl>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

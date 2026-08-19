@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Somalia Opportunity — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="module-4.html" class="sitelink" data-page="module-4.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="module-6.html" class="sitelink" data-page="module-6.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="mod5">
+    <span class="tag"><span class="en">Local Focus</span><span class="so">Diirad Maxalli ah</span></span>
+    <h2><span class="en">The Somalia opportunity</span><span class="so">Fursadda Soomaaliya</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="mod5-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="mod5-text">
+      <h3><span class="en">Mobile money is the real payment infrastructure</span><span class="so">Lacagta mobilku waa kaabayaasha lacag-bixinta dhabta ah</span></h3>
+      <p class="en">Roughly <strong>89% of Somalis</strong> use mobile money, versus under 9% with a bank account. Leading services: EVC Plus (Hormuud), Zaad (Hormuud/Telesom), e-Dahab (Dahabshiil), Sahal (Golis), and Premier Wallet.</p>
+      <p class="so">Ku dhawaad <strong>89% Soomaalida</strong> ayaa isticmaala lacagta mobilka, marka loo eego 9% oo bangi haysta. Adeegyada hormuudka ah: EVC Plus (Hormuud), Zaad (Hormuud/Telesom), e-Dahab (Dahabshiil), Sahal (Golis), iyo Premier Wallet.</p>
+      <div class="callout">
+        <strong class="en">What this means for us:</strong><strong class="so">Waxa ay noo micnaysaa:</strong>
+        <span class="en"> checkout should be built around mobile money and cash-on-delivery first — not international cards.</span>
+        <span class="so"> lacag-bixinta waa in lagu dhisaa lacagta mobilka iyo cash-on-delivery marka hore — ma aha kaadhadhka caalamiga ah.</span>
+      </div>
+      <h3><span class="en">Social commerce over traditional stores</span><span class="so">Ganacsiga bulshada wuxuu ka fiican yahay dukaamada dhaqameed</span></h3>
+      <p class="en">Much of Somali online commerce happens through WhatsApp catalogs and Facebook Pages, not standalone websites. A well-run WhatsApp Business + Facebook Page can outperform a website early on.</p>
+      <p class="so">Inta badan ganacsiga Soomaaliyeed ee internetka wuxuu ka dhacaa WhatsApp iyo Facebook, ma aha websitayaal gaar ah. WhatsApp Business + Facebook Page oo si fiican loo maamulo ayaa ka fiican kara website bilowga.</p>
+      <h3><span class="en">Logistics reality</span><span class="so">Xaqiiqda gaarsiinta</span></h3>
+      <ul class="en">
+        <li>International shipping into Somalia can be slow — set honest delivery expectations.</li>
+        <li>Consider bulk-importing popular items into a local hub for faster fulfillment.</li>
+        <li>Partner with a trusted local courier for last-mile delivery.</li>
+      </ul>
+      <ul class="so">
+        <li>Rarida caalamiga ah ee Soomaaliya way gaabsan kartaa — si daacad ah ula socod filashada macmiilka.</li>
+        <li>Ka fiirso soo dejinta tirooyinka badan ee alaabta caanka ah bakhaar maxalli ah.</li>
+        <li>La shaqee kuur gaarsiin la isku halayn karo oo maxalli ah.</li>
+      </ul>
+      <h3><span class="en">Why this can work in our favor</span><span class="so">Sababta ay noo shaqeyn karto</span></h3>
+      <ul class="en">
+        <li>Large, young, mobile-first population</li>
+        <li>Growing diaspora remittance economy</li>
+        <li>Relatively low competition</li>
+        <li>Strong word-of-mouth culture</li>
+      </ul>
+      <ul class="so">
+        <li>Dad badan, da' yar, oo mobilka horay u isticmaala</li>
+        <li>Dhaqaale xawilaad qurbo-joog oo koraya</li>
+        <li>Tartan aad u yar</li>
+        <li>Dhaqan af-ka-af oo xoog leh</li>
+      </ul>
+    </div>
+    <div class="quiz" data-qcount="3">
+      <div class="quiz-header">✅ <span class="en">Knowledge Check</span><span class="so">Hubinta Aqoonta</span></div>
+      <div class="quiz-q">
+        <p class="stem en">What percentage of Somalis use mobile money, roughly?</p>
+        <p class="stem so">Boqolkiiba immisa Soomaalida ayaa isticmaasha lacagta mobilka?</p>
+        <label><input type="radio" name="q5_1" data-correct="false" onchange="gradeOne(this)">~30%</label>
+        <label><input type="radio" name="q5_1" data-correct="true" onchange="gradeOne(this)">~89%</label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite — it's much higher.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — way ka sareysaa.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">What should our primary checkout method be for Somali customers?</p>
+        <p class="stem so">Habka ugu horreeya ee lacag-bixinta waa maxay macaamiisha Soomaaliyeed?</p>
+        <label><input type="radio" name="q5_2" data-correct="true" onchange="gradeOne(this)"><span class="en">Mobile money / cash on delivery</span><span class="so">Lacagta mobilka / cash on delivery</span></label>
+        <label><input type="radio" name="q5_2" data-correct="false" onchange="gradeOne(this)"><span class="en">International credit card only</span><span class="so">Kaadhka caalamiga ah oo keliya</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite.</span><span class="so incorrect-msg">❌ Maaha sax.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">Where does most Somali online commerce actually happen?</p>
+        <p class="stem so">Xagee ayuu inta badan ka dhacaa ganacsiga internetka Soomaalida?</p>
+        <label><input type="radio" name="q5_3" data-correct="false" onchange="gradeOne(this)"><span class="en">Standalone websites</span><span class="so">Websitayaal gaar ah</span></label>
+        <label><input type="radio" name="q5_3" data-correct="true" onchange="gradeOne(this)"><span class="en">WhatsApp and Facebook</span><span class="so">WhatsApp iyo Facebook</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite.</span><span class="so incorrect-msg">❌ Maaha sax.</span>
+        </div>
+      </div>
+    </div>
+    <label class="checklist" style="border:none;padding-top:14px;">
+      <input type="checkbox" class="tracker">
+      <span><span class="en">I understand how payments, marketing, and delivery differ for Somalia</span><span class="so">Waan fahmay sida lacag-bixinta, suuqgeynta, iyo gaarsiinta ugu kala duwan yihiin Soomaaliya</span></span>
+    </label>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

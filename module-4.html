@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tools &amp; Platforms — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="module-3.html" class="sitelink" data-page="module-3.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="module-5.html" class="sitelink" data-page="module-5.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="mod4">
+    <span class="tag"><span class="en">Toolkit</span><span class="so">Aaladaha</span></span>
+    <h2><span class="en">Tools &amp; platforms</span><span class="so">Aaladaha &amp; barxadaha</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="mod4-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="mod4-text">
+      <table class="compare">
+        <tr><th class="en">Purpose</th><th class="so">Ujeeddada</th><th class="en">Tools</th><th class="so">Aaladaha</th></tr>
+        <tr><td class="en">Storefront</td><td class="so">Dukaan</td><td colspan="2">Shopify — or a free WhatsApp Business catalog / Facebook Shop to start</td></tr>
+        <tr><td class="en">Suppliers</td><td class="so">Alaab-siiyayaal</td><td colspan="2">AliExpress, CJdropshipping, Alibaba, or local wholesalers</td></tr>
+        <tr><td class="en">International payments</td><td class="so">Lacag-bixin caalami ah</td><td colspan="2">Shopify Payments/Stripe, PayPal</td></tr>
+        <tr><td class="en">Somalia-facing payments</td><td class="so">Lacag-bixin Soomaaliya</td><td colspan="2">EVC Plus, Zaad, e-Dahab, Premier Wallet, cash on delivery</td></tr>
+        <tr><td class="en">Marketing</td><td class="so">Suuqgeyn</td><td colspan="2">Facebook/Instagram/TikTok ads, WhatsApp broadcast lists</td></tr>
+        <tr><td class="en">Design</td><td class="so">Naqshad</td><td colspan="2">Canva</td></tr>
+        <tr><td class="en">Order tracking</td><td class="so">La socodka dalabka</td><td colspan="2">Supplier dashboard, shared spreadsheet</td></tr>
+      </table>
+      <p class="en">We don't need every tool on day one. Start lean: a free social storefront, one supplier, and a spreadsheet. Upgrade once we've proven a product sells.</p>
+      <p class="so">Uma baahnid dhammaan aaladaha maalinta koowaad. Ku bilow si fudud: dukaan bulsho oo bilaash ah, hal alaab-siiye, iyo jadwal xisaabeed. Kor u qaad marka aad xaqiijiso in alaabtu iibiso.</p>
+    </div>
+    <div class="quiz" data-qcount="3">
+      <div class="quiz-header">✅ <span class="en">Knowledge Check</span><span class="so">Hubinta Aqoonta</span></div>
+      <div class="quiz-q">
+        <p class="stem en">Which payment method is most relevant for Somali customers?</p>
+        <p class="stem so">Habka lacag-bixinta tee ayaa ugu habboon macaamiisha Soomaaliyeed?</p>
+        <label><input type="radio" name="q4_1" data-correct="false" onchange="gradeOne(this)"><span class="en">International credit card only</span><span class="so">Kaadhka deynta caalamiga ah oo keliya</span></label>
+        <label><input type="radio" name="q4_1" data-correct="true" onchange="gradeOne(this)"><span class="en">Mobile money (e.g. EVC Plus) and cash on delivery</span><span class="so">Lacagta mobilka (tusaale EVC Plus) iyo cash on delivery</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite — very few local customers have a card.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — macaamiil yar ayaa haysta kaadh.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">What is the recommended way to start, tool-wise?</p>
+        <p class="stem so">Sidee ayaa lagula talinayaa in aaladaha lagu bilaabo?</p>
+        <label><input type="radio" name="q4_2" data-correct="true" onchange="gradeOne(this)"><span class="en">Lean: free storefront, one supplier, a spreadsheet</span><span class="so">Fudud: dukaan bilaash ah, hal alaab-siiye, jadwal xisaabeed</span></label>
+        <label><input type="radio" name="q4_2" data-correct="false" onchange="gradeOne(this)"><span class="en">Buy every tool available immediately</span><span class="so">Isla markiiba iibso dhammaan aaladaha</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite — start lean and upgrade later.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — ku bilow si fudud, kadib kor u qaad.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">Canva is primarily used for what?</p>
+        <p class="stem so">Canva inta badan maxaa loo isticmaalaa?</p>
+        <label><input type="radio" name="q4_3" data-correct="true" onchange="gradeOne(this)"><span class="en">Design (product graphics, ads, posts)</span><span class="so">Naqshad (sawirrada alaabta, xayaysiisyada)</span></label>
+        <label><input type="radio" name="q4_3" data-correct="false" onchange="gradeOne(this)"><span class="en">Shipping tracking</span><span class="so">La socodka raritaanka</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite.</span><span class="so incorrect-msg">❌ Maaha sax.</span>
+        </div>
+      </div>
+    </div>
+    <label class="checklist" style="border:none;padding-top:14px;">
+      <input type="checkbox" class="tracker">
+      <span><span class="en">I know which tools we'll start with and why</span><span class="so">Waan ogahay aaladaha aan ku bilaabi doono iyo sababta</span></span>
+    </label>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

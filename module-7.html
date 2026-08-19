@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your 30-Day Action Plan — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="module-6.html" class="sitelink" data-page="module-6.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="module-8.html" class="sitelink" data-page="module-8.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="mod7">
+    <span class="tag"><span class="en">Action Plan</span><span class="so">Qorshaha Ficilka</span></span>
+    <h2><span class="en">Your first 30 days</span><span class="so">30-kii maalmood ee ugu horreysa</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="mod7-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="mod7-text">
+      <h3><span class="en">Week 1 — Learn &amp; explore</span><span class="so">Toddobaadka 1aad — Baro &amp; Baadh</span></h3>
+      <div class="checklist">
+        <label><input type="checkbox" class="tracker"><span><span class="en">Finish this training program and note any questions</span><span class="so">Dhammaystir barnaamijkan oo qor su'aal kasta</span></span></label>
+        <label><input type="checkbox" class="tracker"><span><span class="en">Browse 3 example dropshipping stores and note what they do well</span><span class="so">Booqo 3 dukaan oo dropshipping ah oo qor waxa ay si fiican u qaban</span></span></label>
+        <label><input type="checkbox" class="tracker"><span><span class="en">Create a shortlist of 3–5 possible niches with me</span><span class="so">Ila samee liis ka kooban 3-5 niche oo suurtagal ah</span></span></label>
+      </div>
+      <h3><span class="en">Week 2 — Set up the basics</span><span class="so">Toddobaadka 2aad — Diyaari aasaaska</span></h3>
+      <div class="checklist">
+        <label><input type="checkbox" class="tracker"><span><span class="en">Set up WhatsApp Business / Facebook Page as our first storefront</span><span class="so">Diyaari WhatsApp Business / Facebook Page dukaankeenna ugu horreeya</span></span></label>
+        <label><input type="checkbox" class="tracker"><span><span class="en">Research and shortlist 2–3 suppliers</span><span class="so">Baadh oo liiso 2-3 alaab-siiye</span></span></label>
+        <label><input type="checkbox" class="tracker"><span><span class="en">Set up our mobile money receiving method</span><span class="so">Diyaari habka aan ku qaadanno lacagta mobilka</span></span></label>
+      </div>
+      <h3><span class="en">Week 3 — First products live</span><span class="so">Toddobaadka 3aad — Alaabta ugu horeysa</span></h3>
+      <div class="checklist">
+        <label><input type="checkbox" class="tracker"><span><span class="en">List our first 5–10 products with photos and prices</span><span class="so">Liiso 5-10 alaab oo aan leeyahay sawirro iyo qiimayaal</span></span></label>
+        <label><input type="checkbox" class="tracker"><span><span class="en">Create 5 pieces of promotional content</span><span class="so">Samee 5 waxqabad oo xayaysiin ah</span></span></label>
+        <label><input type="checkbox" class="tracker"><span><span class="en">Share with friends/family to get first test orders</span><span class="so">La wadaag saaxiibada/qoyska si aad u hesho dalabyada tijaabada</span></span></label>
+      </div>
+      <h3><span class="en">Week 4 — Review &amp; improve</span><span class="so">Toddobaadka 4aad — Dib u eeg &amp; hagaaji</span></h3>
+      <div class="checklist">
+        <label><input type="checkbox" class="tracker"><span><span class="en">Review what sold, what didn't, and why</span><span class="so">Dib u eeg waxa iibsaday, waxaan iibsan, iyo sababta</span></span></label>
+        <label><input type="checkbox" class="tracker"><span><span class="en">Collect feedback from first customers</span><span class="so">Soo ururi ra'yiga macaamiisha ugu horreeya</span></span></label>
+        <label><input type="checkbox" class="tracker"><span><span class="en">Plan month 2</span><span class="so">Qorshee bisha 2aad</span></span></label>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

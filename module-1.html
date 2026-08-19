@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is Dropshipping? — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="welcome.html" class="sitelink" data-page="welcome.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="module-2.html" class="sitelink" data-page="module-2.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="mod1">
+    <span class="tag"><span class="en">Foundations</span><span class="so">Aasaaska</span></span>
+    <h2><span class="en">What is dropshipping?</span><span class="so">Waa maxay dropshipping-ku?</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="mod1-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="mod1-text">
+      <p class="en"><strong>Dropshipping is a way of selling products online without ever holding the inventory yourself.</strong> You run the online store and handle marketing and customer service. When a customer buys something, you forward that order to a supplier, who packs and ships it directly to the customer — never passing through your hands.</p>
+      <p class="so"><strong>Dropshipping waa hab lagu iibiyo alaabta internetka iyadoon aadan marnaba haysan bakhaarka.</strong> Waxaad maamashaa dukaanka online-ka ah, waxaadna maamashaa suuqgeynta iyo adeegga macaamiisha. Marka macmiil wax iibsado, dalabka waxaad u gudbisaa alaab-siiyaha, kaas oo si toos ah ugu diri macmiilka — mar walba iyada oo aan gacantaada marin.</p>
+      <p class="en">You make your profit from the difference between what the customer pays you and what the supplier charges you.</p>
+      <p class="so">Faa'iidadaada waxay ka timaadaa farqiga u dhexeeya waxa macmiilku ku bixiyo iyo waxa alaab-siiyuhu kaa qaado.</p>
+      <div class="callout">
+        <strong class="en">In one sentence:</strong><strong class="so">Hal jumlad:</strong>
+        <span class="en"> you are the storefront and the marketer; the supplier is the warehouse and the delivery service.</span>
+        <span class="so"> adigu waxaad tahay dukaanka iyo suuqgeeyaha; alaab-siiyuhuna waa bakhaarka iyo adeegga gaarsiinta.</span>
+      </div>
+      <h3><span class="en">Why people choose this model</span><span class="so">Sababta dadku u doortaan qaabkan</span></h3>
+      <ul class="en">
+        <li><strong>Low starting cost</strong> — no need to buy stock upfront or rent a warehouse.</li>
+        <li><strong>Low risk</strong> — you only pay the supplier after a customer has already paid you.</li>
+        <li><strong>Flexible</strong> — can be run from a phone or laptop, from anywhere.</li>
+        <li><strong>Wide product range</strong> — you can test many products quickly without owning any of them.</li>
+      </ul>
+      <ul class="so">
+        <li><strong>Kharash bilow oo hooseeya</strong> — uma baahnid inaad hore u iibsato alaab ama aad kiraysato bakhaar.</li>
+        <li><strong>Khatar yar</strong> — alaab-siiyaha kuma bixisid ilaa macmiilku horta ku bixiyo.</li>
+        <li><strong>Dabacsanaan</strong> — waxaad ka shaqayn kartaa taleefan ama laptop, meel kastaba.</li>
+        <li><strong>Alaab kala duwan oo badan</strong> — waxaad si degdeg ah u tijaabin kartaa alaab badan iyadoon mid ka mid ahi kuu lahayn.</li>
+      </ul>
+      <h3><span class="en">What it is not</span><span class="so">Waxa uusan ahayn</span></h3>
+      <ul class="en">
+        <li>It is <em>not</em> passive income — running ads, answering customers, and managing suppliers is real, ongoing work.</li>
+        <li>It is <em>not</em> guaranteed profit — margins per item are usually thin, so volume and repeat customers matter.</li>
+        <li>It is <em>not</em> instant — building trust and a reliable supplier chain takes weeks to months.</li>
+      </ul>
+      <ul class="so">
+        <li><em>Maahan</em> dakhli aan shaqo lahayn — xayaysiisyada, ka jawaabidda macaamiisha, iyo maaraynta alaab-siiyayaasha waa shaqo dhab ah oo joogto ah.</li>
+        <li><em>Maahan</em> faa'iido la hubo — faraqa alaab kastaa inta badan waa yar yahay, marka tirada iyo macaamiisha soo noqnoqda ayaa muhiim ah.</li>
+        <li><em>Maahan</em> mid degdeg ah — dhisidda kalsoonida iyo silsilad alaab-siiye la isku halayn karo waxay qaadataa toddobaadyo ilaa bilo.</li>
+      </ul>
+    </div>
+    <div class="quiz" data-qcount="3">
+      <div class="quiz-header">✅ <span class="en">Knowledge Check</span><span class="so">Hubinta Aqoonta</span></div>
+      <div class="quiz-q">
+        <p class="stem en">Who ships the product to the final customer in dropshipping?</p>
+        <p class="stem so">Yaa alaabta u diraa macmiilka ugu dambeeya dropshipping-ka?</p>
+        <label><input type="radio" name="q1_1" data-correct="false" onchange="gradeOne(this)"><span class="en">The online store owner</span><span class="so">Milkiilaha dukaanka online-ka</span></label>
+        <label><input type="radio" name="q1_1" data-correct="true" onchange="gradeOne(this)"><span class="en">The supplier</span><span class="so">Alaab-siiyaha</span></label>
+        <label><input type="radio" name="q1_1" data-correct="false" onchange="gradeOne(this)"><span class="en">The customer's bank</span><span class="so">Bangiga macmiilka</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct — the supplier ships directly to the customer.</span>
+          <span class="so correct-msg">✅ Sax — alaab-siiyuhu si toos ah ayuu ugu diraa macmiilka.</span>
+          <span class="en incorrect-msg">❌ Not quite — the supplier ships directly to the customer, not you.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — alaab-siiyuhu si toos ah buu ugu diraa macmiilka, adiga ma aha.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">Where does your profit come from?</p>
+        <p class="stem so">Xagee ka timaadaa faa'iidadaada?</p>
+        <label><input type="radio" name="q1_2" data-correct="false" onchange="gradeOne(this)"><span class="en">A fixed salary from the supplier</span><span class="so">Mushahar go'an oo alaab-siiyuhu bixiyo</span></label>
+        <label><input type="radio" name="q1_2" data-correct="true" onchange="gradeOne(this)"><span class="en">The difference between customer price and supplier cost</span><span class="so">Farqiga u dhexeeya qiimaha macmiilku bixiyo iyo kharashka alaab-siiyaha</span></label>
+        <label><input type="radio" name="q1_2" data-correct="false" onchange="gradeOne(this)"><span class="en">Government subsidy</span><span class="so">Kaalmo dowladeed</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct — that gap is your margin.</span>
+          <span class="so correct-msg">✅ Sax — farqigaas waa faa'iidadaada.</span>
+          <span class="en incorrect-msg">❌ Not quite — review the profit example in "How the Process Works."</span>
+          <span class="so incorrect-msg">❌ Maaha sax — dib u eeg tusaalaha faa'iidada ee "Sida Habraacu u Shaqeeyo."</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">Is dropshipping passive income that requires no ongoing work?</p>
+        <p class="stem so">Dropshipping-ku ma yahay dakhli aan shaqo joogto ah u baahnayn?</p>
+        <label><input type="radio" name="q1_3" data-correct="false" onchange="gradeOne(this)"><span class="en">Yes, once it's set up it runs itself</span><span class="so">Haa, marka la dhiso way iskeed u socotaa</span></label>
+        <label><input type="radio" name="q1_3" data-correct="true" onchange="gradeOne(this)"><span class="en">No, it needs ongoing marketing and customer service</span><span class="so">Maya, waxay u baahan tahay suuqgeyn iyo adeeg macaamiil oo joogto ah</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct — it's real, ongoing work.</span>
+          <span class="so correct-msg">✅ Sax — waa shaqo dhab ah oo joogto ah.</span>
+          <span class="en incorrect-msg">❌ Not quite — re-read "What it is not" above.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — dib u akhri "Waxa uusan ahayn" kore.</span>
+        </div>
+      </div>
+    </div>
+    <label class="checklist" style="border:none;padding-top:14px;">
+      <input type="checkbox" class="tracker">
+      <span><span class="en">I can explain what dropshipping is in my own words</span><span class="so">Waan ku sharaxi karaa dropshipping-ka erayadayda</span></span>
+    </label>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

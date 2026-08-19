@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How the Process Works — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="module-1.html" class="sitelink" data-page="module-1.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="module-3.html" class="sitelink" data-page="module-3.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="mod2">
+    <span class="tag"><span class="en">The Order Flow</span><span class="so">Socodka Dalabka</span></span>
+    <h2><span class="en">How the process actually works</span><span class="so">Sida habraacu run ahaantii u shaqeeyo</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="mod2-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="mod2-text">
+      <p class="en">Here is the full journey of one single order, from start to finish:</p>
+      <p class="so">Kani waa safarka buuxa ee hal dalab, bilowga ilaa dhamaadka:</p>
+      <div class="flow">
+        <div class="box"><span class="en">Customer visits your store</span><span class="so">Macmiilku booqdaa dukaankaaga</span></div><span class="arrow">→</span>
+        <div class="box"><span class="en">Customer pays you</span><span class="so">Macmiilku kuu bixiyaa</span></div><span class="arrow">→</span>
+        <div class="box"><span class="en">You order from supplier</span><span class="so">Waxaad ka dalbataa alaab-siiyaha</span></div><span class="arrow">→</span>
+        <div class="box"><span class="en">Supplier ships to customer</span><span class="so">Alaab-siiyuhu u diraa macmiilka</span></div><span class="arrow">→</span>
+        <div class="box"><span class="en">You keep the profit margin</span><span class="so">Waxaad hayataa faa'iidada</span></div>
+      </div>
+      <h3><span class="en">The five building blocks you need</span><span class="so">Shanta walxood ee aad u baahan tahay</span></h3>
+      <ol class="en">
+        <li><strong>A niche</strong> — a focused product category rather than "everything."</li>
+        <li><strong>A supplier</strong> — a factory, wholesaler, or platform (AliExpress, CJdropshipping, local wholesaler) that ships when you order.</li>
+        <li><strong>A storefront</strong> — a website or a social media page/WhatsApp catalog where customers order.</li>
+        <li><strong>A payment method</strong> — a way for customers to pay you, and for you to pay suppliers.</li>
+        <li><strong>Marketing</strong> — ads, content, or word of mouth that brings customers in. Without this, nothing else matters.</li>
+      </ol>
+      <ol class="so">
+        <li><strong>Niche (qayb gaar ah)</strong> — nooc alaab oo la xaqiijiyay, ma aha "wax walba."</li>
+        <li><strong>Alaab-siiye</strong> — warshad, tuujaar, ama barxad (AliExpress, CJdropshipping, tuujaar maxalli ah) oo kuu diri karta marka aad dalbato.</li>
+        <li><strong>Dukaan</strong> — website ama bog bulsho/WhatsApp oo macaamiishu ka dalban karaan.</li>
+        <li><strong>Hab lacag-bixin</strong> — hab macaamiishu kuugu bixiyaan, iyo hab aad u bixiso alaab-siiyaha.</li>
+        <li><strong>Suuqgeyn</strong> — xayaysiis, waxqabad, ama af-ka-af oo macaamiil keena. La'aantiisa, wax kale ma qiimo lahan.</li>
+      </ol>
+      <h3><span class="en">Where the money actually comes from</span><span class="so">Xagee lacagtu run ahaantii ka timaaddo</span></h3>
+      <table class="compare">
+        <tr><th class="en">Item</th><th class="so">Waxa la iibiyay</th><th>Example</th></tr>
+        <tr><td><span class="en">Customer pays</span><span class="so">Macmiilku wuxuu bixiyaa</span></td><td>$25.00</td></tr>
+        <tr><td><span class="en">Supplier cost + shipping</span><span class="so">Kharashka alaab-siiyaha + rarid</span></td><td>$9.50</td></tr>
+        <tr><td><span class="en">Ad cost to acquire that sale</span><span class="so">Kharashka xayaysiiska</span></td><td>$6.00</td></tr>
+        <tr><td><span class="en">Platform/payment fees</span><span class="so">Khidmadaha barxadda/lacag-bixinta</span></td><td>$1.50</td></tr>
+        <tr><td><strong class="en">Your profit</strong><strong class="so">Faa'iidadaada</strong></td><td><strong>$8.00</strong></td></tr>
+      </table>
+      <div class="callout gold">
+        <strong class="en">Key insight:</strong><strong class="so">Fikrad muhiim ah:</strong>
+        <span class="en"> most beginners focus only on "what do I sell." The businesses that survive focus equally on marketing and customer trust — usually the real bottleneck.</span>
+        <span class="so"> inta badan bilowga ayaa keliya fiirsata "maxaan iibiyaa." Ganacsiyada badbaada waxay isla mid ahaan u fiirsadaan suuqgeynta iyo kalsoonida macmiilka — kaas oo inta badan ah caqabadda dhabta ah.</span>
+      </div>
+    </div>
+    <div class="quiz" data-qcount="3">
+      <div class="quiz-header">✅ <span class="en">Knowledge Check</span><span class="so">Hubinta Aqoonta</span></div>
+      <div class="quiz-q">
+        <p class="stem en">In the order flow, what happens right after the customer pays?</p>
+        <p class="stem so">Habraaca dalabka, maxaa dhaca marka macmiilku bixiyo kaddib?</p>
+        <label><input type="radio" name="q2_1" data-correct="true" onchange="gradeOne(this)"><span class="en">You place the matching order with your supplier</span><span class="so">Waxaad dalab u dirtaa alaab-siiyaha</span></label>
+        <label><input type="radio" name="q2_1" data-correct="false" onchange="gradeOne(this)"><span class="en">The product ships from your house</span><span class="so">Alaabta waxay ka soo baxdaa gurigaaga</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite — you never physically hold the product.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — marnaba gacanta kuma haysid alaabta.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">Which of the five building blocks is most often neglected by beginners?</p>
+        <p class="stem so">Shanta walxood, tee ayaa inta badan ay dayaceen bilowyaasha?</p>
+        <label><input type="radio" name="q2_2" data-correct="false" onchange="gradeOne(this)"><span class="en">Choosing a niche</span><span class="so">Doorashada niche-ga</span></label>
+        <label><input type="radio" name="q2_2" data-correct="true" onchange="gradeOne(this)"><span class="en">Marketing</span><span class="so">Suuqgeynta</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct — the store doesn't sell itself.</span>
+          <span class="so correct-msg">✅ Sax — dukaanku iskiis isu iibiyo ma karo.</span>
+          <span class="en incorrect-msg">❌ Not quite — re-read the "Key insight" callout.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — dib u akhri fikradda "muhiimka ah."</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">In the profit example, why was the final profit only $8 out of a $25 sale?</p>
+        <p class="stem so">Tusaalaha faa'iidada, sababta faa'iidadu ugu dambeyn ahayd $8 keliya oo $25 laga iibiyay?</p>
+        <label><input type="radio" name="q2_3" data-correct="true" onchange="gradeOne(this)"><span class="en">Supplier cost, ad cost, and fees were subtracted first</span><span class="so">Kharashka alaab-siiyaha, xayaysiiska, iyo khidmadaha ayaa hore looga jaray</span></label>
+        <label><input type="radio" name="q2_3" data-correct="false" onchange="gradeOne(this)"><span class="en">The customer only paid $8</span><span class="so">Macmiilku wuxuu bixiyay $8 keliya</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite — look at the table again.</span>
+          <span class="so incorrect-msg">❌ Maaha sax — mar labaad eeg jadwalka.</span>
+        </div>
+      </div>
+    </div>
+    <label class="checklist" style="border:none;padding-top:14px;">
+      <input type="checkbox" class="tracker">
+      <span><span class="en">I understand the full order flow and where profit comes from</span><span class="so">Waan fahmay habraaca dalabka iyo halka faa'iiddu ka timaaddo</span></span>
+    </label>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

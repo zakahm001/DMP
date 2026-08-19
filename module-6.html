@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Other Opportunities — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="module-5.html" class="sitelink" data-page="module-5.html">← <span class="en">Prev</span><span class="so">Hore</span></a>
+  <a href="module-7.html" class="sitelink" data-page="module-7.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="mod6">
+    <span class="tag"><span class="en">Growth Paths</span><span class="so">Fursado Kordhin</span></span>
+    <h2><span class="en">Other opportunities</span><span class="so">Fursado kale</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="mod6-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="mod6-text">
+      <h3><span class="en">Diaspora "gift delivery" model</span><span class="so">Qaabka "gaarsiinta hadyada" ee qurbo-joogta</span></h3>
+      <p class="en">Somalis abroad often want to send groceries or gifts to family back home. A storefront where diaspora pay and goods are delivered locally is dropshipping — but the payer and recipient differ.</p>
+      <p class="so">Soomaalida qurbaha jooga ayaa badanaa raba inay u dirtaan qoyskooda alaab ama hadyado. Dukaan uu qurbo-joogu ku bixiyo, alaabtana lagu gaarsiiyo maxalliga ah waa dropshipping — laakiin bixiyaha iyo helayaashu way kala duwan yihiin.</p>
+      <h3><span class="en">Print-on-demand</span><span class="so">Print-on-demand</span></h3>
+      <p class="en">Custom t-shirts or mugs with local designs — printed and shipped only after an order, no inventory risk.</p>
+      <p class="so">Funaanado ama koobabka leh naqshado maxalli ah — oo kaliya la daabaco kadib dalabka, khatar bakhaar ma jirto.</p>
+      <h3><span class="en">Digital products / affiliate marketing</span><span class="so">Alaabta dijital ah / suuqgeynta wakiilnimada</span></h3>
+      <p class="en">Selling or promoting courses, templates, or others' products for commission — no shipping logistics at all.</p>
+      <p class="so">Iibinta ama kor u qaadida koorsooyin, foomamka, ama alaabta dadka kale oo lacag komishan ah loo qaato — gaarsiin lagama baahna.</p>
+      <h3><span class="en">Local sourcing, global selling</span><span class="so">Ka helitaanka maxalliga ah, iibinta caalamiga ah</span></h3>
+      <p class="en">Sourcing Somali goods (textiles, henna, frankincense, coffee) and marketing to diaspora or niche international buyers.</p>
+      <p class="so">Ka helitaanka alaabta Soomaaliyeed (dharka, xinnida, foox, bun) oo loo suuqgeeyo qurbo-joogta ama iibiyayaal caalami ah.</p>
+      <div class="callout gold">
+        <span class="en">We don't need to chase all of these at once. Start with one focused niche, prove it works, then expand.</span>
+        <span class="so">Uma baahnid inaad dhammaan isla mar dabagalto. Ku bilow hal niche oo la xaqiijiyay, xaqiiji inay shaqeyso, kadib balaadhi.</span>
+      </div>
+    </div>
+    <div class="quiz" data-qcount="3">
+      <div class="quiz-header">✅ <span class="en">Knowledge Check</span><span class="so">Hubinta Aqoonta</span></div>
+      <div class="quiz-q">
+        <p class="stem en">In the diaspora gift-delivery model, who typically pays?</p>
+        <p class="stem so">Qaabka gaarsiinta hadyada, cadaan yaa bixiya?</p>
+        <label><input type="radio" name="q6_1" data-correct="true" onchange="gradeOne(this)"><span class="en">Family abroad, for delivery to relatives at home</span><span class="so">Qoyska qurbaha jooga, si loogu gaarsiiyo ehelka guriga</span></label>
+        <label><input type="radio" name="q6_1" data-correct="false" onchange="gradeOne(this)"><span class="en">Always the recipient themselves</span><span class="so">Had iyo jeer qofka helaya</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite.</span><span class="so incorrect-msg">❌ Maaha sax.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">What makes print-on-demand low-risk, like dropshipping?</p>
+        <p class="stem so">Maxaa print-on-demand khatar u yeelaya sida dropshipping-ka?</p>
+        <label><input type="radio" name="q6_2" data-correct="true" onchange="gradeOne(this)"><span class="en">Items are only printed after a customer orders</span><span class="so">Alaabta waxaa la daabacaa kaliya kadib marka macmiilku dalbado</span></label>
+        <label><input type="radio" name="q6_2" data-correct="false" onchange="gradeOne(this)"><span class="en">It requires no marketing</span><span class="so">Suuqgeyn lama baahna</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite.</span><span class="so incorrect-msg">❌ Maaha sax.</span>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="stem en">What's the recommended approach across all these models?</p>
+        <p class="stem so">Waa maxay habka lagula talinayo dhammaan qaababkan?</p>
+        <label><input type="radio" name="q6_3" data-correct="true" onchange="gradeOne(this)"><span class="en">Start with one niche, prove it, then expand</span><span class="so">Ku bilow hal niche, xaqiiji, kadib balaadhi</span></label>
+        <label><input type="radio" name="q6_3" data-correct="false" onchange="gradeOne(this)"><span class="en">Try all models simultaneously from day one</span><span class="so">Isku day dhammaan qaababka maalinta koowaad</span></label>
+        <div class="feedback">
+          <span class="en correct-msg">✅ Correct.</span><span class="so correct-msg">✅ Sax.</span>
+          <span class="en incorrect-msg">❌ Not quite.</span><span class="so incorrect-msg">❌ Maaha sax.</span>
+        </div>
+      </div>
+    </div>
+    <label class="checklist" style="border:none;padding-top:14px;">
+      <input type="checkbox" class="tracker">
+      <span><span class="en">I know what other business models exist beyond basic dropshipping</span><span class="so">Waan ogahay qaababka ganacsiga kale ee ka baxsan dropshipping-ka aasaasiga ah</span></span>
+    </label>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

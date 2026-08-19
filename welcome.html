@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome — Dropshipping Mastery Program</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="control-bar">
+  <span class="en">🌐 Language:</span><span class="so">🌐 Luuqad:</span>
+  <div class="lang-toggle">
+    <button id="btnEn" class="active" onclick="setLang('en')">English</button>
+    <button id="btnSo" onclick="setLang('so')">Soomaali</button>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="index.html" class="sitelink home" data-page="index.html">🏠 <span class="en">Contents</span><span class="so">Waxyaabaha</span></a>
+  <a href="index.html" class="sitelink" data-page="index.html">← <span class="en">Back</span><span class="so">Dib</span></a>
+  <a href="module-1.html" class="sitelink" data-page="module-1.html"><span class="en">Next</span><span class="so">Xiga</span> →</a>
+</nav>
+
+<div class="voice-settings">
+  <div class="voice-settings-inner">
+    <span>🎙️ <span class="en">Voice type</span><span class="so">Nooca Codka</span>:</span>
+    <div class="gender-toggle">
+      <button type="button" class="gbtn active" data-gender="any" onclick="setGender('any')"><span class="en">Any</span><span class="so">Dhammaan</span></button>
+      <button type="button" class="gbtn" data-gender="female" onclick="setGender('female')">♀ <span class="en">Woman</span><span class="so">Dumar</span></button>
+      <button type="button" class="gbtn" data-gender="male" onclick="setGender('male')">♂ <span class="en">Man</span><span class="so">Rag</span></button>
+    </div>
+    <span>🔊 <span class="en">Voice</span><span class="so">Cod</span>:</span>
+    <select id="voiceSelect"></select>
+    <span><span class="en">Speed</span><span class="so">Xawli</span>:</span>
+    <input type="range" id="rateRange" min="0.6" max="1.3" step="0.1" value="0.9">
+    <div class="voice-note" id="voiceNote">
+      <span class="en">⚠️ This device has no Somali voice installed, so narration falls back to the closest available voice and will mispronounce Somali words. Somali text still displays correctly regardless.</span>
+      <span class="so">⚠️ Qalabkan cod Soomaali ah lama helin, marka akhriska wuxuu isticmaali doonaa codka ugu dhow ee la heli karo oo si sax ah uma dhawaaqi doono ereyada Soomaaliga. Qoraalka Soomaaliga ahi si sax ah ayuu u muuqan doonaa si kastaba ha ahaatee.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="module" id="welcome">
+    <span class="tag"><span class="en">Start Here</span><span class="so">Ka Bilow Halkan</span></span>
+    <h2><span class="en">Welcome — how to use this program</span><span class="so">Soo Dhawoow — sida loo isticmaalo barnaamijkan</span></h2>
+    <div class="listen-row">
+      <button class="listen-btn" data-target="welcome-text">🔊 <span class="en">Listen to this section</span><span class="so">Dhegayso qaybtan</span></button>
+      <button class="stop-btn" onclick="stopSpeech()">■ <span class="en">Stop</span><span class="so">Jooji</span></button>
+    </div>
+    <div id="welcome-text">
+      <p class="en">Welcome. This program takes you from zero knowledge to confidently running a real dropshipping business — step by step, in your own time.</p>
+      <p class="so">Soo dhawoow. Barnaamijkan wuxuu kaa qaadayaa aqoon eber ah ilaa aad kalsooni ku maamusho ganacsi dropshipping ah oo dhab ah — tallaabo tallaabo, waqtigaaga.</p>
+      <p class="en">Every section is its own page with a <strong>🔊 Listen</strong> button that reads it aloud, and a language switch at the top so you can study in whichever language is easiest for you. After each core module, a short quiz checks your understanding immediately.</p>
+      <p class="so">Qayb kastaa waa bog gaar ah oo leh badhan <strong>🔊 Dhegayso</strong> oo kuu akhriya, iyo doorasho luuqadeed oo ku taal sare si aad ugu bartid luuqadda kuugu fudud. Qayb kasta oo waxbarasho ah kadib, imtixaan gaaban ayaa hubinaya fahamkaaga isla markaaba.</p>
+      <p class="en">Use the Contents page to jump to any section (it opens in a new tab), or use the Next button below to move through in order. Finish with the final exam and certificate.</p>
+      <p class="so">Isticmaal bogga Waxyaabaha si aad ugu gudubto qayb kasta (wuxuu ku furmayaa tab cusub), ama isticmaal badhanka Xiga si aad si nidaamsan u sii socoto. Ku dhammee imtixaanka ugu dambeeya iyo shahaadada.</p>
+    </div>
+    <label class="checklist" style="border:none;padding-top:14px;">
+      <input type="checkbox" class="tracker">
+      <span><span class="en">I understand how to use this training program</span><span class="so">Waan fahmay sida loo isticmaalo barnaamijkan</span></span>
+    </label>
+  </section>
+</main>
+
+<footer>
+  <span class="en">Built as a professional training resource. Bring questions to your next check-in.</span>
+  <span class="so">Waxaa loo dhisay sida agabka tababarka xirfadeed. Su'aalaha kaxeeya kulankaaga xiga.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
